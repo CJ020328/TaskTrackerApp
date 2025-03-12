@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_search"
+        android:title="Search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        android:icon="@android:drawable/ic_menu_search"/>
+
+    <item
+        android:id="@+id/priority"
+        android:title="@string/priority"
+        android:icon="@android:drawable/ic_menu_sort_by_size">
+        <menu>
+            <item
+                android:id="@+id/high_priority"
+                android:title="@string/high_priority"
+                android:checkable="true" />
+            <item
+                android:id="@+id/medium_priority"
+                android:title="@string/medium_priority"
+                android:checkable="true"/>
+            <item
+                android:id="@+id/low_priority"
+                android:title="@string/low_priority"
+                android:checkable="true" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/sort_by_due_date"
+        android:title="@string/sort_by_due_date"
+        android:checkable="true"/>
+
+
+    <item
+        android:id="@+id/show_completed"
+        android:title="@string/show_completed"
+        android:checkable="true"
+        android:checked="false"
+        android:icon="@android:drawable/ic_menu_view" />
+
+</menu>

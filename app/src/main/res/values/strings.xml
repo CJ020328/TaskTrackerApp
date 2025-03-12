@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Task Tracker</string>
+    <string name="completed">Completed</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="no_due_date">No Due Date</string>
+    <string name="task_title_hint">Enter Task Title</string>
+    <string name="choose_due_date">Choose Due Date</string>
+    <string name="new_task">New Task</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="choose_time">Choose Time</string>
+    <string name="no_due_time">no due time</string>
+    <string name="task_completed">Task Completed</string>
+    <string name="low_priority">Low</string>
+    <string name="medium_priority">Medium</string>
+    <string name="high_priority">High</string>
+    <string name="show_completed">Show completed task\n</string>
+    <string name="create_your_own_task">Create Your Own Task</string>
+    <string name="description_hint">Enter Task Description here</string>
+    <string name="your_tasks">Your Task</string>
+    <string name="priority">Sort By Priority</string>
+    <string name="sort_by_due_date">Sort By Due Date</string>
+    <string name="channel_name">Task Notifications\n</string>
+    <string name="channel_description">Notifications for reminder dates</string>
+    <string name="no_reminder_date">No Reminder Date</string>
+    <string name="due_date">Due Date</string>
+    <string name="reminder_date">Reminder Date</string>
+    <string name="choose_reminder_date">Choose Reminder Date</string>
+</resources>

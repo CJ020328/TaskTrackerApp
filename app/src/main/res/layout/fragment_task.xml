@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/create_your_own_task"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="24dp" />
+
+
+    <ImageButton
+        android:id="@+id/task_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_delete"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/task_delete"
+        android:layout_marginTop="25dp">
+
+
+
+    <EditText
+        android:id="@+id/task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_small"
+        android:hint="@string/task_title_hint"
+        android:inputType="text"
+        android:imeOptions="actionDone"
+        android:importantForAutofill="no"
+        android:maxLines="1"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="17sp" />
+
+    <EditText
+        android:id="@+id/task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext"
+        android:hint="@string/description_hint"
+        android:inputType="textMultiLine"
+        android:minLines="4"
+        android:gravity="top|start"
+        android:layout_marginBottom="24dp"
+        android:padding="8dp"
+        android:textColorHint="@android:color/white"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/task_due_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/due_date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/task_description" />
+
+        <Button
+            android:id="@+id/task_due_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@color/colorLightBlue"
+            android:text="@string/choose_due_date"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/task_due_date_title" />
+
+        <TextView
+            android:id="@+id/task_reminder_date_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reminder_date"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/task_due_date" />
+
+        <Button
+            android:id="@+id/task_reminder_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@color/colorLightBlue"
+            android:text="@string/choose_reminder_date"
+            android:textSize="15sp"
+            android:layout_marginBottom="24dp"
+            android:layout_below="@id/task_reminder_date_title" />
+
+    <CheckBox
+        android:id="@+id/task_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/completed"
+        android:textSize="15sp"
+        android:layout_marginBottom="24dp"
+        android:theme="@style/MyCheckBox"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group_priority"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
+
+        <RadioButton
+            android:id="@+id/radio_low_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/low_priority"
+            android:textSize="15sp"
+            android:theme="@style/MyRadioButton"/>
+
+        <RadioButton
+            android:id="@+id/radio_medium_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium_priority"
+            android:checked="true"
+            android:textSize="15sp"
+            android:layout_marginStart="16dp"
+            android:theme="@style/MyRadioButton" />
+
+        <RadioButton
+            android:id="@+id/radio_high_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/high_priority"
+            android:textSize="15sp"
+            android:layout_marginStart="16dp"
+            android:theme="@style/MyRadioButton"/>
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textColor="@color/colorLightBlue"
+            android:textSize="15sp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:background="@color/colorLightBlue" />
+
+    </LinearLayout>
+</LinearLayout>
+</RelativeLayout>
