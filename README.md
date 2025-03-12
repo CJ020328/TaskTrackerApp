@@ -26,7 +26,7 @@ The application is built using modern Android development practices:
 ## Screenshots
 
 **Task List UI:** Displays all tasks with due date, priority, and completion status. ![Screenshot](https://github.com/CJ020328/TaskTrackerApp/blob/main/TTAScreenShot/TTA_img1.png)
-**Sorting & Filtering:** Users can sort tasks by priority or due date. ![Screenshot](link_to_2.png)
+**Sorting & Filtering:** Users can sort tasks by priority or due date. ![Screenshot](https://github.com/CJ020328/TaskTrackerApp/blob/main/TTAScreenShot/TTA_img2.png)
 **Task Creation:** Allows users to define a new task with reminders. ![Screenshot](link_to_3.png)
 **Task Completion & Deletion:** Tasks can be marked as done or removed. ![Screenshot](link_to_4.png)
 **Reminder Selection:** Custom time picker for task reminders. ![Screenshot](link_to_5.png)
